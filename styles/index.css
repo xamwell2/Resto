@@ -1,0 +1,80 @@
+/* variable declaration */
+
+:root {
+  --primary: #fea116;
+  --light: #f1f8ff;
+  --dark: #0f172b;
+  --margin: 0;
+  --padding: 0;
+  --box-sizing: border-box;
+  --font-family: "Pacifico", cursive;
+}
+
+/* General styles  */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: var(--px-10);
+  background-color: var(--light);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo .img {
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+  color: var(--primary);
+}
+
+.resto {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+nav ul {
+  list-style: none;
+  display: inline flex;
+  gap: var(--px-20);
+}
+
+nav ul li {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 300px;
+}
+
+.table {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 2rem;
+  color: var(--light);
+  background-color: var(--primary);
+  border-radius: 5px;
+}
