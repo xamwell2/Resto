@@ -20,9 +20,11 @@
 }
 
 body {
-  background-color: var(--light);
   font-family: var(--font-family);
   overflow-x: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -30,7 +32,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   padding: var(--px-10);
-  background-color: var(--light);
+  background-color: var(--dark);
   margin-bottom: 100px;
 }
 
@@ -40,15 +42,14 @@ header {
   align-items: center;
 }
 
-.logo .img {
+.img {
   width: 35px;
   height: 35px;
   margin-top: 10px;
-  color: var(--primary);
 }
 
 .resto {
-  background-color: var(--light);
+  background-color: var(--dark);
   color: var(--primary);
 }
 
@@ -56,6 +57,7 @@ nav ul {
   list-style: none;
   display: inline flex;
   gap: var(--px-20);
+  color: var(--light);
 }
 
 nav ul li {
@@ -68,6 +70,9 @@ nav ul li a {
   display: flex;
   justify-content: space-evenly;
   gap: 300px;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: var(--dark);
 }
 
 .table {
@@ -75,6 +80,38 @@ nav ul li a {
   height: 30px;
   display: inline-block;
   margin-left: 2rem;
+  color: var(--light);
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+
+.bk-sec {
+  display: flex;
+  margin: 200px 50px 50px;
+  width: auto;
+  height: auto;
+}
+
+.bk-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.bk-left {
+  background: url("../public/Hero/bg-hero.jpg");
+  background-color: var(--dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--dark);
+}
+
+.bk-tb {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
   color: var(--light);
   background-color: var(--primary);
   border-radius: 5px;
