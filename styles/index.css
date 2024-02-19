@@ -22,18 +22,14 @@
 body {
   font-family: var(--font-family);
   overflow-x: hidden;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--dark);
 }
 
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: var(--px-10);
   background-color: var(--dark);
-  margin-bottom: 100px;
 }
 
 .logo {
@@ -87,32 +83,58 @@ nav ul li a {
 
 .bk-sec {
   display: flex;
-  margin: 200px 50px 50px;
-  width: auto;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 .bk-container {
   position: relative;
   display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 .bk-left {
-  background: url("../public/Hero/bg-hero.jpg");
+  color: var(--light);
   background-color: var(--dark);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: var(--dark);
+}
+
+.bk-h2 {
+  margin: 200px 50px 40px;
+  padding: 20px;
+  line-height: 5rem;
+  font-size: 60px;
+}
+
+.bk-p {
+  font-size: 15px;
+  margin: 10px 0 0 60px;
 }
 
 .bk-tb {
-  width: 100px;
-  height: 30px;
+  width: 200px;
+  height: 60px;
   display: inline-block;
   color: var(--light);
   background-color: var(--primary);
   border-radius: 5px;
+  margin: 20px 0 20px 60px;
+  border: var(--light);
+  font-size: 20px;
+}
+
+.bk-right {
+  background-color: var(--dark);
+  margin: 10em 0 3em 25em;
+  max-width: 100%;
+  height: auto;
+}
+
+.bk-right .rotate-img {
+  width: 40em;
+  animation: rotate 100s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
