@@ -21,8 +21,8 @@
 
 body {
   font-family: var(--font-family);
-  overflow-x: hidden;
   background-color: var(--dark);
+  overflow-x: hidden;
 }
 
 header {
@@ -30,29 +30,18 @@ header {
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--dark);
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img {
-  width: 35px;
-  height: 35px;
-  margin-top: 10px;
+  margin-top: 1em;
+  font-size: 1.5em;
 }
 
 .resto {
   background-color: var(--dark);
   color: var(--primary);
+  text-align: left;
 }
 
 nav ul {
-  list-style: none;
   display: inline flex;
-  gap: var(--px-20);
   color: var(--light);
 }
 
@@ -62,33 +51,34 @@ nav ul li {
   justify-content: space-evenly;
 }
 
-nav ul li a {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 300px;
-  text-decoration: none;
-  font-size: 16px;
-  background-color: var(--dark);
+nav ul li:hover {
+  color: var(--primary);
+  cursor: pointer;
 }
 
 .table {
-  width: 100px;
-  height: 30px;
+  width: 10em;
+  height: 4em;
   display: inline-block;
   margin-left: 2rem;
   color: var(--light);
   background-color: var(--primary);
-  border-radius: 5px;
+  border-radius: 0.5em;
+}
+
+.table:hover {
+  cursor: pointer;
 }
 
 .bk-sec {
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 200px;
+  background-color: var(--dark);
 }
 
 .bk-container {
-  position: relative;
+  position: absolute;
   display: flex;
 }
 
@@ -98,43 +88,89 @@ nav ul li a {
 }
 
 .bk-h2 {
-  margin: 200px 50px 40px;
-  padding: 20px;
-  line-height: 5rem;
-  font-size: 60px;
+  margin: 3em 0 0 1.4em;
+  padding: 0.2em;
+  line-height: 1.5em;
+  font-size: 3.5em;
 }
 
 .bk-p {
-  font-size: 15px;
-  margin: 10px 0 0 60px;
+  font-size: 1.1em;
+  margin: 0 0 0 5em;
+  padding: 0.2em;
 }
 
 .bk-tb {
-  width: 200px;
-  height: 60px;
-  display: inline-block;
+  width: 8em;
+  height: 2.5em;
   color: var(--light);
   background-color: var(--primary);
-  border-radius: 5px;
-  margin: 20px 0 20px 60px;
+  border-radius: 0.5em;
+  margin: 1em 0 0 4.5em;
   border: var(--light);
-  font-size: 20px;
+  font-size: 1.2em;
 }
 
 .bk-right {
   background-color: var(--dark);
-  margin: 10em 0 3em 25em;
-  max-width: 100%;
-  height: auto;
+  margin: 4.1em 2em 1em;
 }
 
 .bk-right .rotate-img {
   width: 40em;
-  animation: rotate 100s linear infinite;
+  animation: rotate 70s linear infinite;
 }
 
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.services {
+  position: absolute;
+  background-color: var(--light);
+  margin: 40em auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.services-cart {
+  margin: 5em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.carts {
+  border: 0.1em solid var(--primary);
+  width: 20em;
+  height: 15em;
+  outline: none;
+  box-shadow: 10px 5px 5px var(--primary);
+  cursor: pointer;
+}
+
+.fa {
+  color: var(--dark);
+  margin: 0.5em;
+}
+
+.carts:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.fa:hover {
+  color: var(--light);
+}
+
+.headings {
+  margin: 0.2em 0 0 1.5em;
+}
+
+.p-text {
+  margin: 0.5em 0 0 1.5em;
+  font-size: 1.1em;
 }
