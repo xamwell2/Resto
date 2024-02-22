@@ -322,3 +322,130 @@ nav ul li:hover {
   cursor: pointer;
   border: 0;
 }
+
+.food-menu {
+  position: relative;
+  background-color: var(--light);
+  margin-top: -70em;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hr-text {
+  border: 0;
+  line-height: 1em;
+  position: relative;
+  text-align: center;
+  height: 1.5em;
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.hr-text::before {
+  content: "";
+  background: linear-gradient(to right, transparent, #fea116, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+
+.hr-text::after {
+  content: attr(data-content);
+  position: relative;
+  padding: 0 0.2em;
+  line-height: 1.5em;
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+.most-p-items {
+  text-align: center;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.food-menu .food-menu-men .popular-items {
+  display: inline-flex;
+  box-sizing: border-box;
+}
+
+.pop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+}
+
+.pop-items .mini-list {
+  list-style-type: none;
+  margin: auto;
+  max-width: 80vw;
+}
+
+.pop-items .mini-list .deals {
+  color: var(--dark);
+  display: inline-flex;
+  list-style: none;
+}
+
+.deals .fa-coffee {
+  color: #fea116;
+  font-size: 1.2em;
+}
+
+.deals .fa-hamburger {
+  color: #fea116;
+  font-size: 1.2em;
+}
+
+.deals .fa-utensils {
+  color: #fea116;
+  font-size: 1.2em;
+}
+
+.menu-items {
+  margin: 5em auto 5em 5em;
+  width: 100%;
+}
+
+.menu-items .chicken-burger {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.chicken-img-1 {
+  height: auto;
+  width: auto;
+}
+
+.chicken-img-1 .chicken-img-1-1 {
+  width: auto;
+  height: 8em;
+}
+
+.line-1 {
+  width: 15em;
+}
+
+.details {
+  width: fit-content;
+  height: fit-content;
+  justify-content: left;
+  margin: 1.1em 0 0 1.1em;
+  font-size: 1.2em;
+}
+
+.chicken-burger-1 {
+  color: var(--dark);
+  font-size: 1.2em;
+}
+
+.price-1 {
+  color: var(--primary);
+  font-weight: bold;
+  margin: -2em 0 0 13.2em;
+}
