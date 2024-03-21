@@ -329,6 +329,7 @@ nav ul li:hover {
   margin-top: -70em;
   max-width: 100%;
   max-height: 100%;
+  margin-bottom: -3em;
 }
 
 .hr-text {
@@ -368,7 +369,7 @@ nav ul li:hover {
   font-size: 2em;
 }
 
-.food-menu .food-menu-men .popular-items {
+.food-menu .food-menu-men {
   display: inline-flex;
   box-sizing: border-box;
 }
@@ -407,45 +408,47 @@ nav ul li:hover {
   font-size: 1.2em;
 }
 
-.menu-items {
-  margin: 5em auto 5em 5em;
+.food-listing {
+  background-color: var(--light);
   width: 100%;
+  height: 100%;
+  margin: 3em auto auto;
 }
 
-.menu-items .chicken-burger {
-  display: flex;
-  flex-flow: row wrap;
+.food-listing .menu-items {
+  padding: 1em;
+  margin: 3em 1em 3.5em 1.5em;
+  font-family: var(--font-family);
+  background-color: var(--light);
 }
 
-.chicken-img-1 {
-  height: auto;
-  width: auto;
+.food-listing .menu-items .chicken-burger {
+  box-sizing: border-box;
 }
 
-.chicken-img-1 .chicken-img-1-1 {
-  width: auto;
-  height: 8em;
+.part-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 45em);
+  grid-template-rows: repeat(4, 7em);
+  gap: 2.5em;
+  margin-left: 4em;
 }
 
-.line-1 {
-  width: 15em;
+.chicken1 {
+  font-family: var(--font-family-bold);
 }
 
-.details {
+.price {
   width: fit-content;
-  height: fit-content;
-  justify-content: left;
-  margin: 1.1em 0 0 1.1em;
-  font-size: 1.2em;
-}
-
-.chicken-burger-1 {
-  color: var(--dark);
-  font-size: 1.2em;
-}
-
-.price-1 {
   color: var(--primary);
-  font-weight: bold;
-  margin: -2em 0 0 13.2em;
+  margin: 0 0 0 20em;
+}
+
+.line {
+  width: 33.2em;
+}
+
+.down-text {
+  font-style: normal;
+  font-weight: lighter;
 }
