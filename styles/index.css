@@ -412,7 +412,7 @@ nav ul li:hover {
   background-color: var(--light);
   width: 100%;
   height: 100%;
-  margin: 3em auto auto;
+  margin: 3em auto -4em;
 }
 
 .food-listing .menu-items {
@@ -451,4 +451,82 @@ nav ul li:hover {
 .down-text {
   font-style: normal;
   font-weight: lighter;
+}
+
+.res-tbl {
+  background-color: var(--light);
+  width: 100%;
+  height: 100%;
+  margin: 4em auto auto;
+}
+
+.res-tbl .tbl-res {
+  margin: 0.5em auto 0 4em;
+  padding: 5em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.vid-side {
+  width: 50%;
+  height: 100%;
+}
+
+.reservation {
+  width: 50%;
+  height: 50%;
+  background: var(--dark);
+}
+
+.reservation .rest-title {
+  color: var(--primary);
+  font-size: 1.5em;
+  margin: 0 0 0 1em;
+}
+
+.reservation .tbl-book {
+  color: var(--light);
+  font-size: 1.5em;
+  margin: 0 0 0 1em;
+  width: 50%;
+  height: 100%;
+}
+
+.reservation .form-tbl {
+  margin: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+#username,
+#email,
+#date-time,
+#no-people {
+  width: 15em;
+  height: 3em;
+}
+
+#textarea {
+  width: 31.2em;
+  height: 7em;
+}
+
+.book-now {
+  margin: 1.5em;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#btn-book {
+  width: 22.1em;
+  height: 2.8em;
+  color: var(--light);
+  background-color: var(--primary);
+  border-radius: 0.5em;
+  border: var(--light);
+  font-size: 1.2em;
+  cursor: pointer;
 }
