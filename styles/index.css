@@ -503,14 +503,14 @@ nav ul li:hover {
 #username,
 #email,
 #date-time,
-#no-people {
+#people {
   width: 15em;
   height: 3em;
 }
 
 #textarea {
   width: 31.2em;
-  height: 7em;
+  height: 5em;
 }
 
 .book-now {
@@ -529,4 +529,91 @@ nav ul li:hover {
   border: var(--light);
   font-size: 1.2em;
   cursor: pointer;
+  margin: -0.5em 0 0;
+}
+
+.chefs {
+  background: var(--light);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 1em;
+}
+
+.chefs .master-chefs {
+  margin: 1em;
+  font-size: 1em;
+}
+
+.chefs .master-chefs .team-members {
+  width: 100%;
+  height: 100%;
+}
+
+.members {
+  color: var(--primary);
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.our-chefs {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-master-chefs {
+  color: var(--dark);
+  text-align: center;
+  font-size: 1.7em;
+  text-decoration: none;
+  margin-top: 0.3em;
+}
+
+.members-photo {
+  width: 100%;
+  height: 100%;
+  margin: 1em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.members-photo .squ-members {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  box-sizing: border-box;
+}
+
+.member-1 {
+  margin: 0;
+  padding: 0;
+}
+
+.team1,
+.team2,
+.team3,
+.team4 {
+  width: 20em;
+  height: 20em;
+  border-radius: 10em;
+}
+
+.name,
+.sign {
+  text-align: center;
+  margin: 0.2em;
+}
+
+.team1:hover,
+.team2:hover,
+.team3:hover,
+.team4:hover {
+  transform: scale(1.2);
 }
